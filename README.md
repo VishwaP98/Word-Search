@@ -21,15 +21,17 @@ If the user finds it hard to find a word, they can just click on the word given 
  
  <p float="center">No Words Found yet!</p>
  
+ 
+ <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot4.png" width="280" height="450" alt="No Words Found yet" hspace="50">
+ 
+ <p float="center">Hints Provided here</p> 
+ 
  <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot2.png" width="250" height="400" alt="No Words Found yet" hspace="50">
- 
- <p float="center">Hints Provided here</p>
- 
- <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot3.png" width="280" height="450" alt="No Words Found yet" hspace="50">
  
  <p float="center">Selecting a word</p>
  
- <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot4.png" width="280" height="450" alt="No Words Found yet" hspace="50">
+ 
+ <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot3.png" width="280" height="450" alt="No Words Found yet" hspace="50">
  <p float="center">All words are selected</p>
 </p>
 </div>
