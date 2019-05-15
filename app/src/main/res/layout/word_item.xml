@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/word"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_corner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</com.google.android.flexbox.FlexboxLayout>
