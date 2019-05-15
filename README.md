@@ -17,11 +17,11 @@ If the user finds it hard to find a word, they can just click on the word given 
 
 <div align="center">
 <p float="center">
-  <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot1.png" width="280" height="450" alt="No Words Found yet" hspace="50">
+  <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot1.png" width="250" height="400" alt="No Words Found yet" hspace="50">
  
  <p float="center">No Words Found yet!</p>
  
- <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot2.png" width="280" height="450" alt="No Words Found yet" hspace="50">
+ <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot2.png" width="250" height="400" alt="No Words Found yet" hspace="50">
  
  <p float="center">Hints Provided here</p>
  
