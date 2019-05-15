@@ -36,3 +36,5 @@ If the user finds it hard to find a word, they can just click on the word given 
 </p>
 </div>
 
+To add more about how words are added to the grid, we want to sort the words from shortest to longest and then starting putting the longest ones first in the grid as we will have more options to put the longer words first in the grid and shorter words will still be able to have enough possible placements.
+
