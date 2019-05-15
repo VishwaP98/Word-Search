@@ -10,10 +10,10 @@ If the user finds it hard to find a word, they can just click on the word given 
 
 # Features:
 
-## 1. Placement of Words in the grid will be random everytime user runs the app
-## 2. Hint feature is provided to aid users who are struggling to find the word in the grid
-## 3. Users can swipe to select the word from the gridView
-## 4. Users are given a list of words they have to find from the grid and everytime a word is found, it gets crossed off
+### 1. Placement of Words in the grid will be random everytime user runs the app
+### 2. Hint feature is provided to aid users who are struggling to find the word in the grid
+### 3. Users can swipe to select the word from the gridView
+### 4. Users are given a list of words they have to find from the grid and everytime a word is found, it gets crossed off
 
 
 
