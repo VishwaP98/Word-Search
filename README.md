@@ -17,4 +17,4 @@ If the user finds it hard to find a word, they can just click on the word given 
 
 
 
-![alt text](http://url/to/ScreenShot1.png)
+![alt text](https://github.com/VishwaP98/Word-Search/ScreenShots/ScreenShot1.png)
