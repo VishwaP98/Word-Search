@@ -15,6 +15,7 @@ If the user finds it hard to find a word, they can just click on the word given 
  3. Users can swipe to select the word from the gridView
  4. Users are given a list of words they have to find from the grid and everytime a word is found, it gets crossed off
 
+<div align="center">
 <p float="center">
   <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot1.png" width="280" height="450" alt="No Words Found yet" hspace="50">
  
@@ -31,4 +32,5 @@ If the user finds it hard to find a word, they can just click on the word given 
  <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot4.png" width="280" height="450" alt="No Words Found yet" hspace="50">
  <p float="center">Text4</p>
 </p>
+</div>
 
