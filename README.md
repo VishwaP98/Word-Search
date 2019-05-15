@@ -1,5 +1,5 @@
 # Word-Search App
-Created by Vishwa Patel
+Created by Vishwa Patel, Developed using Kotlin
 
 
 ## This is basically a Word Search game that has certain words in the grid which the user has to find.
