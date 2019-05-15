@@ -16,6 +16,6 @@ If the user finds it hard to find a word, they can just click on the word given 
  4. Users are given a list of words they have to find from the grid and everytime a word is found, it gets crossed off
 
 <p float="left">
-  <img src="https://github.com/VishwaP98/Word-Search/tree/master/ScreenShots/ScreenShot1.png" width="280" height="450" alt="No Words Found yet" hspace="20">
+  <img src="https://github.com/VishwaP98/Word-Search/blob/master/ScreenShots/ScreenShot1.png" width="280" height="450" alt="No Words Found yet" hspace="20">
 </p>
 
