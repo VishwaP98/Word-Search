@@ -1,5 +1,7 @@
 package com.example.vishwa.wordsearchchallenge.model
 
+import android.graphics.Color
+import android.widget.GridView
 import java.util.*
 /**
  * Created by Vishwa Patel
@@ -10,7 +12,6 @@ class CharGrid(rowsInput: Int, columnsInput: Int) {
     /* Our grid should be at least 10x10 */
     private val rows: Int = rowsInput
     private val columns: Int = columnsInput
-    private var grid = ArrayList<ArrayList<CharElement>>()
 
     init {
 
@@ -38,14 +39,6 @@ class CharGrid(rowsInput: Int, columnsInput: Int) {
 
     fun getGrid() : List<List<CharElement>> {
         return grid
-    }
-
-    private fun getPosition(index: Int) : Pair<Int,Int> {
-
-        val arrayNum = index / grid.size
-        val offset = index % grid.size
-
-        return Pair(arrayNum, offset)
     }
 
     fun addWords(words: List<String>) : Boolean {
@@ -157,6 +150,8 @@ class CharGrid(rowsInput: Int, columnsInput: Int) {
 
         println("Randomly selected start is $randomStarts in range ${possiblePlacesList.size}")
 
+        storedWords[word.toUpperCase()] = possiblePlacesList[randomStarts] // store the word in map for future use
+
         placeWord(word, possiblePlacesList[randomStarts].first, possiblePlacesList[randomStarts].second)
 
         return possiblePlacesList.size > 0
@@ -201,8 +196,70 @@ class CharGrid(rowsInput: Int, columnsInput: Int) {
         return true
     }
 
-    /*
-        TODO: Add logic to verify if user selection matches one of the words in the list
-     */
+    companion object {
+        private var grid = ArrayList<ArrayList<CharElement>>()
+
+        private val storedWords: MutableMap<String, Pair<Int, WordPlacement>> = mutableMapOf()
+
+        @JvmStatic
+        fun gridContainsWord(word : String) : Boolean {
+
+            return storedWords.containsKey(word)
+        }
+
+        @JvmStatic
+        fun getWordGridPosition(word : String) : Pair<Int, WordPlacement>? {
+
+            if(gridContainsWord(word.toUpperCase())) {
+                return storedWords[word.toUpperCase()]
+
+            }
+
+            return null
+
+        }
+
+        @JvmStatic
+        fun highlightWordInGrid(gridView: GridView, word : String) : Boolean {
+
+            if(!storedWords.containsKey(word)) {
+                return false
+            }
+
+            println("In highlighting here ")
+
+            val (startIndex, direction) = Pair(storedWords[word]!!.first, storedWords[word]!!.second)
+
+            var currIndex = startIndex
+
+            for(char in word) {
+
+                gridView.getChildAt(currIndex).setBackgroundColor(Color.YELLOW)
+
+                currIndex += 10 * direction.verticalStep + direction.horizontalStep
+
+            }
+
+            return true
+        }
+
+
+        @JvmStatic
+        fun getCharAtBlock(block : Int) : Char {
+
+            val (currIndexRow, currIndexCol) = getPosition(block)
+
+            return grid[currIndexRow][currIndexCol].getValue()
+        }
+
+        @JvmStatic
+        fun getPosition(index: Int) : Pair<Int,Int> {
+
+            val arrayNum = index / grid.size
+            val offset = index % grid.size
+
+            return Pair(arrayNum, offset)
+        }
+    }
 
 }
